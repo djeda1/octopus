@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Octopus · Рестораны морской кухни</title>
+  <meta name="description" content="Octopus: рестораны морской кухни в Алматы, Астане и Шымкенте. Осьминог на углях, устрицы на льду, паэлья на всю компанию.">
+  <meta name="theme-color" content="#0b1115">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=1100&h=1400&fit=crop&q=80">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Octopus, на главную">
+      <span class="logo-o" aria-hidden="true"></span><span>ctopus</span>
+    </a>
+    <nav class="nav-links" aria-label="Основная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#signature">Фирменное</a>
+      <a href="#more">Банкеты</a>
+      <a href="#places">Рестораны</a>
+    </nav>
+    <a href="#booking" class="btn btn-coral btn-sm nav-cta">Забронировать стол</a>
+    <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav aria-label="Мобильная навигация">
+      <a href="#menu">Меню</a>
+      <a href="#signature">Фирменное</a>
+      <a href="#more">Банкеты</a>
+      <a href="#places">Рестораны</a>
+      <a href="#booking" class="drawer-cta">Забронировать стол</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas class="tentacles" id="tentacles" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-up">Рестораны морской кухни</p>
+          <h1 class="hero-title">
+            <span class="line"><span>Море без</span></span>
+            <span class="line"><span><em>перелёта</em></span></span>
+          </h1>
+          <p class="hero-sub reveal-up">Осьминог на углях, устрицы на льду и паэлья на всю компанию. В Алматы, Астане и Шымкенте.</p>
+          <div class="hero-ctas reveal-up">
+            <a href="#booking" class="btn btn-coral magnetic">Забронировать стол <i class="ph ph-arrow-down-right"></i></a>
+            <a href="#menu" class="btn btn-ghost magnetic">Смотреть меню</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <div class="arch">
+            <img src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=1100&h=1400&fit=crop&q=80"
+                 alt="Осьминог на гриле с тигровыми креветками и лимоном на деревянной доске" width="1100" height="1400" fetchpriority="high">
+          </div>
+          <div class="hero-orbit" aria-hidden="true"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Блюда Octopus">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Осьминог на углях</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Устрицы</span><i class="ph-fill ph-asterisk"></i>
+          <span>Паэлья</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Том ям</span><i class="ph-fill ph-asterisk"></i>
+          <span>Камчатский краб</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Севиче</span><i class="ph-fill ph-asterisk"></i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Осьминог на углях</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Устрицы</span><i class="ph-fill ph-asterisk"></i>
+          <span>Паэлья</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Том ям</span><i class="ph-fill ph-asterisk"></i>
+          <span>Камчатский краб</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Севиче</span><i class="ph-fill ph-asterisk"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" id="about">
+      <p class="manifesto-text" id="manifesto">
+        Чтобы поесть хорошего осьминога, не нужно лететь в Стамбул.
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+        Мы привозим охлаждённые морепродукты, готовим их на углях
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+        и подаём без лишнего пафоса.
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+      </p>
+    </section>
+
+    <!-- ============ 8 ARMS: HORIZONTAL MENU ============ -->
+    <section class="arms" id="menu">
+      <div class="arms-track" id="armsTrack">
+        <div class="arms-intro">
+          <h2 class="h2">Меню<br><span class="coral">в восемь рук</span></h2>
+          <p class="lead">Гриль, сырой бар, паста, суши и ещё четыре раздела. Заказывайте на весь стол и пробуйте всё.</p>
+        </div>
+
+        <div class="arms-rail">
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=800&h=1000&fit=crop&q=75" alt="Рыба на гриле с овощами на тёмной тарелке" loading="lazy"></div>
+          <h3>Гриль на углях</h3>
+          <p>Рыба, осьминог и креветки. Только огонь, соль и лимон.</p>
+          <div class="arm-dish"><span>Дорадо на углях</span><b>6 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=800&h=1000&fit=crop&q=75" alt="Морепродукты и рыба на колотом льду" loading="lazy"></div>
+          <h3>Сырой бар</h3>
+          <p>Устрицы, тартары и севиче. Подаём на колотом льду.</p>
+          <div class="arm-dish"><span>Тартар из тунца</span><b>5 400 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&h=1000&fit=crop&q=75" alt="Спагетти с креветками и томатами черри в сковороде" loading="lazy"></div>
+          <h3>Паста</h3>
+          <p>Свежая паста с креветками, мидиями и соусом на рыбном бульоне.</p>
+          <div class="arm-dish"><span>Спагетти с креветками</span><b>5 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=800&h=1000&fit=crop&q=75" alt="Паэлья с мидиями и лимоном в большой сковороде" loading="lazy"></div>
+          <h3>Паэлья и котелки</h3>
+          <p>Одна сковорода на четверых: шафран, мидии, креветки.</p>
+          <div class="arm-dish"><span>Паэлья маринера</span><b>14 900 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=800&h=1000&fit=crop&q=75" alt="Суши и нигири на чёрной доске с палочками" loading="lazy"></div>
+          <h3>Суши и роллы</h3>
+          <p>Нигири, сашими и роллы. У японской линии свой повар.</p>
+          <div class="arm-dish"><span>Сет «Восемь рук»</span><b>12 500 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=800&h=1000&fit=crop&q=75" alt="Два красных лобстера с лимоном на белой тарелке" loading="lazy"></div>
+          <h3>Лобстеры и крабы</h3>
+          <p>Лобстер на гриле и камчатский краб. Для праздника или просто так.</p>
+          <div class="arm-dish"><span>Лобстер на гриле</span><b>24 000 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=1000&fit=crop&q=75" alt="Бармен наливает коктейль в стакан со льдом" loading="lazy"></div>
+          <h3>Бар</h3>
+          <p>Белое, игристое и коктейли, которые не спорят с рыбой.</p>
+          <div class="arm-dish"><span>Коктейль «Чернила»</span><b>3 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?w=800&h=1000&fit=crop&q=75" alt="Кусок тирамису на белой тарелке" loading="lazy"></div>
+          <h3>Десерты</h3>
+          <p>Тирамису, тёмный шоколад и сезонные сорбеты.</p>
+          <div class="arm-dish"><span>Тирамису</span><b>2 900 ₸</b></div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE ============ -->
+    <section class="signature" id="signature">
+      <div class="sig-word" aria-hidden="true">ОСЬМИНОГ</div>
+      <div class="sig-grid">
+        <div class="sig-left">
+          <p class="eyebrow">Фирменное блюдо</p>
+          <h2 class="h3">Осьминог на углях</h2>
+          <p>Сначала томим щупальца до мягкости, потом отправляем на угли до хрустящей корочки. Рядом печёный картофель, каперсы и копчёная паприка.</p>
+        </div>
+        <figure class="sig-media">
+          <div class="arch arch-tall">
+            <img src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=900&h=1200&fit=crop&crop=left&q=80" alt="Щупальца осьминога на гриле крупным планом" loading="lazy">
+          </div>
+          <svg class="badge-spin" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">фирменное блюдо · на углях · octopus · </textPath></text>
+          </svg>
+        </figure>
+        <div class="sig-right">
+          <div class="price"><span>9 900</span> ₸</div>
+          <ul class="chips" aria-label="Состав">
+            <li>Осьминог</li><li>Картофель</li><li>Каперсы</li><li>Паприка</li>
+          </ul>
+          <a href="#booking" class="btn btn-coral magnetic">Забронировать стол</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENTO ============ -->
+    <section class="more" id="more">
+      <h2 class="h2 more-title">Обед, свидание, банкет</h2>
+      <div class="bento">
+        <article class="tile tile-a">
+          <img src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?w=1200&h=1100&fit=crop&q=75" alt="Просторный зал ресторана с высокими окнами" loading="lazy">
+          <div class="tile-body">
+            <h3>Банкеты и события</h3>
+            <p>Закрытые залы на свадьбу, юбилей или корпоратив. Меню соберём под ваш бюджет.</p>
+            <a href="tel:+77000000000" class="link-arrow">Обсудить банкет <i class="ph ph-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="tile tile-b">
+          <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=700&fit=crop&q=75" alt="Барная стойка с подсветкой и рядами бутылок" loading="lazy">
+          <div class="tile-body">
+            <h3>Бар</h3>
+            <p>Можно зайти только на бокал и пару устриц.</p>
+          </div>
+        </article>
+        <article class="tile tile-c">
+          <i class="ph ph-moped tile-icon" aria-hidden="true"></i>
+          <div class="tile-body">
+            <h3>Доставка</h3>
+            <p>Паэлья и паста приедут горячими. Устрицы, увы, только в зале.</p>
+          </div>
+        </article>
+        <article class="tile tile-d">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&h=700&fit=crop&q=75" alt="Повар готовит на открытом огне" loading="lazy">
+          <div class="tile-body">
+            <h3>Открытая кухня</h3>
+            <p>Садитесь у стойки и смотрите, как ваш осьминог уходит на угли.</p>
+          </div>
+        </article>
+        <article class="tile tile-e">
+          <div class="tile-body">
+            <h3>Бизнес-ланч</h3>
+            <p>По будням днём: суп, горячее и напиток. Успеваете за обеденный перерыв.</p>
+          </div>
+          <div class="tile-e-img"><img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=500&h=500&fit=crop&q=75" alt="Креветки на белой тарелке" loading="lazy"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ LOCATIONS ============ -->
+    <!-- TODO: заменить адреса, телефоны и часы работы на реальные данные сети -->
+    <section class="places" id="places">
+      <h2 class="h2">Ближайший Octopus</h2>
+      <div class="cities" id="cities">
+        <div class="city" data-img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Алматы</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>пр. Достык, 105</p>
+            <p><i class="ph ph-map-pin"></i>ул. Розыбакиева, 247</p>
+            <p><i class="ph ph-clock"></i>Ежедневно 12:00 до 02:00</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city" data-img="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Астана</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>пр. Мангилик Ел, 37</p>
+            <p><i class="ph ph-clock"></i>Ежедневно 12:00 до 02:00</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city" data-img="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Шымкент</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>пр. Тауке хана, 54</p>
+            <p><i class="ph ph-clock"></i>Ежедневно 12:00 до 00:00</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city-float" id="cityFloat" aria-hidden="true"><img alt=""></div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <!-- TODO: заменить на реальные отзывы гостей (с их согласия) -->
+    <section class="reviews">
+      <h2 class="h2">Что говорят гости</h2>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>“Взяли осьминога попробовать и тут же заказали второго. Теперь это наше место по пятницам.”</blockquote>
+          <figcaption><b>Айгерим Сагындыкова</b><span>гость ресторана в Алматы</span></figcaption>
+        </figure>
+        <figure class="quote quote-coral">
+          <blockquote>“Отмечали корпоратив на сорок человек. Паэлью вынесли на сковороде размером с колесо, все бросились снимать сторис.”</blockquote>
+          <figcaption><b>Данияр Касымов</b><span>руководитель отдела продаж</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“Устрицы свежие, музыка не орёт, а официант правда разбирается в вине.”</blockquote>
+          <figcaption><b>Мадина Нурланова</b><span>архитектор, Астана</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="booking" id="booking">
+      <div class="booking-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1545816250-e12bedba42ba?w=1800&h=1100&fit=crop&q=70" alt="">
+      </div>
+      <div class="booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow">Бронирование</p>
+          <h2 class="h2">Столик<br>на сегодня?</h2>
+          <p class="lead">Оставьте номер, администратор перезвонит за 15 минут и подтвердит бронь. На пятницу и субботу лучше бронировать заранее.</p>
+          <div class="booking-contacts">
+            <a href="tel:+77000000000"><i class="ph ph-phone"></i>+7 700 000 00 00</a>
+            <a href="https://wa.me/77000000000" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Написать в WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="form" id="bookingForm" novalidate>
+          <div class="form-state" id="formSuccess" hidden>
+            <i class="ph-fill ph-check-circle"></i>
+            <h3>Заявка у нас</h3>
+            <p>Перезвоним в течение 15 минут и подтвердим стол.</p>
+            <button type="button" class="btn btn-ghost" id="formReset">Новая заявка</button>
+          </div>
+
+          <div class="form-fields" id="formFields">
+            <div class="field">
+              <label for="f-name">Имя</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="Как к вам обращаться" required>
+              <small class="err">Напишите, как к вам обращаться</small>
+            </div>
+            <div class="field">
+              <label for="f-phone">Телефон</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___ __ __" required>
+              <small class="err">Нужен номер из 10 цифр после +7</small>
+            </div>
+            <div class="field field-full">
+              <label for="f-place">Ресторан</label>
+              <div class="select">
+                <select id="f-place" name="place" required>
+                  <option value="" disabled selected>Выберите ресторан</option>
+                  <option>Алматы, пр. Достык, 105</option>
+                  <option>Алматы, ул. Розыбакиева, 247</option>
+                  <option>Астана, пр. Мангилик Ел, 37</option>
+                  <option>Шымкент, пр. Тауке хана, 54</option>
+                </select>
+                <i class="ph ph-caret-down"></i>
+              </div>
+              <small class="err">Выберите ресторан</small>
+            </div>
+            <div class="field">
+              <label for="f-date">Дата</label>
+              <input id="f-date" name="date" type="date" required>
+              <small class="err">Выберите дату не раньше сегодняшней</small>
+            </div>
+            <div class="field">
+              <label for="f-time">Время</label>
+              <input id="f-time" name="time" type="time" min="12:00" max="23:30" value="19:30" required>
+              <small class="err">Мы принимаем гостей с 12:00 до 23:30</small>
+            </div>
+            <div class="field field-full">
+              <span class="label" id="guests-label">Гостей</span>
+              <div class="stepper" role="group" aria-labelledby="guests-label">
+                <button type="button" data-step="-1" aria-label="Меньше гостей"><i class="ph ph-minus"></i></button>
+                <output id="guests" aria-live="polite">2</output>
+                <button type="button" data-step="1" aria-label="Больше гостей"><i class="ph ph-plus"></i></button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-coral btn-block">Забронировать стол</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Рестораны</h4>
+        <a href="#places">Алматы</a>
+        <a href="#places">Астана</a>
+        <a href="#places">Шымкент</a>
+      </div>
+      <div class="footer-col">
+        <h4>Гостям</h4>
+        <a href="#menu">Меню</a>
+        <a href="#more">Банкеты</a>
+        <a href="#booking">Бронирование</a>
+      </div>
+      <div class="footer-col">
+        <h4>Связь</h4>
+        <a href="tel:+77000000000">+7 700 000 00 00</a>
+        <a href="mailto:hello@octopus.kz">hello@octopus.kz</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true">
+      <span class="logo-o"></span>ctopus
+    </div>
+    <div class="footer-bottom">
+      <span>Концепт сайта для Octopus · © djedai</span>
+      <a href="#top">Наверх <i class="ph ph-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
