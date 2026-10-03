@@ -3,6 +3,8 @@
    ========================================================= */
 (() => {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const EN = document.documentElement.lang.startsWith("en");
+  const L = (ru, en) => (EN ? en : ru);
   const hasGsap = typeof window.gsap !== "undefined";
   if (hasGsap) gsap.registerPlugin(ScrollTrigger);
 
@@ -150,7 +152,7 @@
   const drawer = document.getElementById("drawer");
   const setDrawer = open => {
     burger.setAttribute("aria-expanded", open);
-    burger.setAttribute("aria-label", open ? "Закрыть меню" : "Открыть меню");
+    burger.setAttribute("aria-label", open ? L("Закрыть меню", "Close menu") : L("Открыть меню", "Open menu"));
     drawer.classList.toggle("is-open", open);
     drawer.setAttribute("aria-hidden", !open);
     document.body.style.overflow = open ? "hidden" : "";
@@ -336,11 +338,11 @@
     const bad = els.filter(el => !check(el));
     if (bad.length) { bad[0].focus(); return; }
     const btn = form.querySelector("[type=submit]");
-    btn.classList.add("is-loading"); btn.textContent = "Отправляем…";
+    btn.classList.add("is-loading"); btn.textContent = L("Отправляем…", "Sending…");
     // TODO: подключить отправку заявки (CRM, Telegram-бот или почта)
     setTimeout(() => {
       fields.hidden = true; success.hidden = false;
-      btn.classList.remove("is-loading"); btn.textContent = "Забронировать стол";
+      btn.classList.remove("is-loading"); btn.textContent = L("Забронировать стол", "Book a table");
     }, 900);
   });
   document.getElementById("formReset").addEventListener("click", () => {

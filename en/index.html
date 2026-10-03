@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Octopus · Seafood Restaurants in Kazakhstan</title>
+  <meta name="description" content="Octopus: seafood restaurants in Almaty, Astana and Shymkent. Charcoal-grilled octopus, oysters on ice and paella for the whole table.">
+  <meta name="theme-color" content="#0b1115">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="alternate" hreflang="ru" href="../">
+  <link rel="alternate" hreflang="en" href="./">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
+  <link rel="preload" as="image" href="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=1100&h=1400&fit=crop&q=80">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="logo" aria-label="Octopus, back to top">
+      <span class="logo-o" aria-hidden="true"></span><span>ctopus</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#menu">Menu</a>
+      <a href="#signature">Signature</a>
+      <a href="#more">Events</a>
+      <a href="#places">Locations</a>
+    </nav>
+    <div class="lang" aria-label="Language">
+      <a href="../" hreflang="ru" lang="ru">RU</a>
+      <a href="./" aria-current="true">EN</a>
+    </div>
+    <a href="#booking" class="btn btn-coral btn-sm nav-cta">Book a table</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <div class="drawer" id="drawer" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#menu">Menu</a>
+      <a href="#signature">Signature</a>
+      <a href="#more">Events</a>
+      <a href="#places">Locations</a>
+      <a href="#booking" class="drawer-cta">Book a table</a>
+    </nav>
+  </div>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <canvas class="tentacles" id="tentacles" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow reveal-up">Seafood restaurants in Kazakhstan</p>
+          <h1 class="hero-title">
+            <span class="line"><span>The sea,</span></span>
+            <span class="line"><span><em>landlocked</em></span></span>
+          </h1>
+          <p class="hero-sub reveal-up">Charcoal-grilled octopus, oysters on ice and paella for the whole table. In Almaty, Astana and Shymkent.</p>
+          <div class="hero-ctas reveal-up">
+            <a href="#booking" class="btn btn-coral magnetic">Book a table <i class="ph ph-arrow-down-right"></i></a>
+            <a href="#menu" class="btn btn-ghost magnetic">See the menu</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <div class="arch">
+            <img src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=1100&h=1400&fit=crop&q=80"
+                 alt="Grilled octopus with tiger prawns and lemon on a wooden board" width="1100" height="1400" fetchpriority="high">
+          </div>
+          <div class="hero-orbit" aria-hidden="true"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-label="Octopus dishes">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span>Charcoal octopus</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Oysters</span><i class="ph-fill ph-asterisk"></i>
+          <span>Paella</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Tom yum</span><i class="ph-fill ph-asterisk"></i>
+          <span>King crab</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Ceviche</span><i class="ph-fill ph-asterisk"></i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Charcoal octopus</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Oysters</span><i class="ph-fill ph-asterisk"></i>
+          <span>Paella</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Tom yum</span><i class="ph-fill ph-asterisk"></i>
+          <span>King crab</span><i class="ph-fill ph-asterisk"></i>
+          <span class="o">Ceviche</span><i class="ph-fill ph-asterisk"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ MANIFESTO ============ -->
+    <section class="manifesto" id="about">
+      <p class="manifesto-text" id="manifesto">
+        You shouldn’t need a flight to Istanbul for a proper octopus.
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+        So we bring in chilled seafood, cook it over charcoal
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+        and serve it without the fuss.
+        <span class="pill-img"><img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?w=360&h=200&fit=crop&q=70" alt="" loading="lazy"></span>
+      </p>
+    </section>
+
+    <!-- ============ 8 ARMS: HORIZONTAL MENU ============ -->
+    <section class="arms" id="menu">
+      <div class="arms-track" id="armsTrack">
+        <div class="arms-intro">
+          <h2 class="h2">Eight arms,<br><span class="coral">one menu</span></h2>
+          <p class="lead">Grill, raw bar, pasta, sushi and four more sections. Order for the whole table and try a bit of everything.</p>
+        </div>
+
+        <div class="arms-rail">
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1611599537845-1c7aca0091c0?w=800&h=1000&fit=crop&q=75" alt="Grilled fish with vegetables on a dark plate" loading="lazy"></div>
+          <h3>Charcoal grill</h3>
+          <p>Fish, octopus and prawns. Just fire, salt and lemon.</p>
+          <div class="arm-dish"><span>Charcoal sea bream</span><b>6 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=800&h=1000&fit=crop&q=75" alt="Seafood and fish on crushed ice" loading="lazy"></div>
+          <h3>Raw bar</h3>
+          <p>Oysters, tartares and ceviche, served on crushed ice.</p>
+          <div class="arm-dish"><span>Tuna tartare</span><b>5 400 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=800&h=1000&fit=crop&q=75" alt="Spaghetti with prawns and cherry tomatoes in a pan" loading="lazy"></div>
+          <h3>Pasta</h3>
+          <p>Fresh pasta with prawns, mussels and a sauce built on fish stock.</p>
+          <div class="arm-dish"><span>Prawn spaghetti</span><b>5 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1534080564583-6be75777b70a?w=800&h=1000&fit=crop&q=75" alt="Paella with mussels and lemon in a large pan" loading="lazy"></div>
+          <h3>Paella &amp; pots</h3>
+          <p>One pan for four: saffron, mussels, prawns.</p>
+          <div class="arm-dish"><span>Paella marinera</span><b>14 900 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?w=800&h=1000&fit=crop&q=75" alt="Sushi and nigiri on a black board with chopsticks" loading="lazy"></div>
+          <h3>Sushi &amp; rolls</h3>
+          <p>Nigiri, sashimi and rolls, with a chef of their own.</p>
+          <div class="arm-dish"><span>“Eight Arms” set</span><b>12 500 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=800&h=1000&fit=crop&q=75" alt="Two red lobsters with lemon on a white plate" loading="lazy"></div>
+          <h3>Lobster &amp; crab</h3>
+          <p>Grilled lobster and king crab. For a celebration, or just because.</p>
+          <div class="arm-dish"><span>Grilled lobster</span><b>24 000 ₸</b></div>
+        </article>
+
+        <article class="arm">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=800&h=1000&fit=crop&q=75" alt="Bartender pouring a cocktail over ice" loading="lazy"></div>
+          <h3>Bar</h3>
+          <p>White, sparkling and cocktails that don’t fight the fish.</p>
+          <div class="arm-dish"><span>“Ink” cocktail</span><b>3 900 ₸</b></div>
+        </article>
+
+        <article class="arm arm-down">
+          <div class="arm-img"><img src="https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b?w=800&h=1000&fit=crop&q=75" alt="A slice of tiramisu on a white plate" loading="lazy"></div>
+          <h3>Desserts</h3>
+          <p>Tiramisu, dark chocolate and seasonal sorbets.</p>
+          <div class="arm-dish"><span>Tiramisu</span><b>2 900 ₸</b></div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIGNATURE ============ -->
+    <section class="signature" id="signature">
+      <div class="sig-word" aria-hidden="true">OCTOPUS</div>
+      <div class="sig-grid">
+        <div class="sig-left">
+          <p class="eyebrow">Signature dish</p>
+          <h2 class="h3">Charcoal-grilled octopus</h2>
+          <p>We braise the tentacles until tender, then finish them over charcoal for a crisp edge. Served with roasted potatoes, capers and smoked paprika.</p>
+        </div>
+        <figure class="sig-media">
+          <div class="arch arch-tall">
+            <img src="https://images.unsplash.com/photo-1606850780554-b55ea4dd0b70?w=900&h=1200&fit=crop&crop=left&q=80" alt="Close-up of grilled octopus tentacles" loading="lazy">
+          </div>
+          <svg class="badge-spin" viewBox="0 0 200 200" aria-hidden="true">
+            <defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+            <text><textPath href="#circ" textLength="486" lengthAdjust="spacing">signature dish · over charcoal · octopus · </textPath></text>
+          </svg>
+        </figure>
+        <div class="sig-right">
+          <div class="price"><span>9 900</span> ₸</div>
+          <ul class="chips" aria-label="Ingredients">
+            <li>Octopus</li><li>Potatoes</li><li>Capers</li><li>Paprika</li>
+          </ul>
+          <a href="#booking" class="btn btn-coral magnetic">Book a table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BENTO ============ -->
+    <section class="more" id="more">
+      <h2 class="h2 more-title">Lunch, date night, banquet</h2>
+      <div class="bento">
+        <article class="tile tile-a">
+          <img src="https://images.unsplash.com/photo-1505275350441-83dcda8eeef5?w=1200&h=1100&fit=crop&q=75" alt="Spacious restaurant hall with tall windows" loading="lazy">
+          <div class="tile-body">
+            <h3>Banquets &amp; events</h3>
+            <p>Private rooms for weddings, anniversaries and company dinners. We’ll build the menu around your budget.</p>
+            <a href="tel:+77000000000" class="link-arrow">Plan an event <i class="ph ph-arrow-right"></i></a>
+          </div>
+        </article>
+        <article class="tile tile-b">
+          <img src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?w=800&h=700&fit=crop&q=75" alt="Backlit bar counter with rows of bottles" loading="lazy">
+          <div class="tile-body">
+            <h3>Bar</h3>
+            <p>Drop in for just a glass and a couple of oysters.</p>
+          </div>
+        </article>
+        <article class="tile tile-c">
+          <i class="ph ph-moped tile-icon" aria-hidden="true"></i>
+          <div class="tile-body">
+            <h3>Delivery</h3>
+            <p>Paella and pasta arrive hot. Oysters, sadly, are dine-in only.</p>
+          </div>
+        </article>
+        <article class="tile tile-d">
+          <img src="https://images.unsplash.com/photo-1600565193348-f74bd3c7ccdf?w=800&h=700&fit=crop&q=75" alt="Chef cooking over an open flame" loading="lazy">
+          <div class="tile-body">
+            <h3>Open kitchen</h3>
+            <p>Sit at the counter and watch your octopus hit the coals.</p>
+          </div>
+        </article>
+        <article class="tile tile-e">
+          <div class="tile-body">
+            <h3>Business lunch</h3>
+            <p>Weekdays: soup, a main and a drink. Done within your lunch break.</p>
+          </div>
+          <div class="tile-e-img"><img src="https://images.unsplash.com/photo-1559737558-2f5a35f4523b?w=500&h=500&fit=crop&q=75" alt="Prawns on a white plate" loading="lazy"></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ LOCATIONS ============ -->
+    <!-- TODO: replace addresses, phones and opening hours with the chain's real data -->
+    <section class="places" id="places">
+      <h2 class="h2">Your nearest Octopus</h2>
+      <div class="cities" id="cities">
+        <div class="city" data-img="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Almaty</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>105 Dostyk Ave</p>
+            <p><i class="ph ph-map-pin"></i>247 Rozybakiev St</p>
+            <p><i class="ph ph-clock"></i>Daily, 12 pm to 2 am</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city" data-img="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Astana</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>37 Mangilik El Ave</p>
+            <p><i class="ph ph-clock"></i>Daily, 12 pm to 2 am</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city" data-img="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=700&h=860&fit=crop&q=75">
+          <h3 class="city-name">Shymkent</h3>
+          <div class="city-info">
+            <p><i class="ph ph-map-pin"></i>54 Tauke Khan Ave</p>
+            <p><i class="ph ph-clock"></i>Daily, 12 pm to midnight</p>
+          </div>
+          <a href="tel:+77000000000" class="city-phone">+7 700 000 00 00</a>
+        </div>
+        <div class="city-float" id="cityFloat" aria-hidden="true"><img alt=""></div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <!-- TODO: replace with real guest reviews (with their consent) -->
+    <section class="reviews">
+      <h2 class="h2">What guests say</h2>
+      <div class="quotes">
+        <figure class="quote">
+          <blockquote>“We ordered the octopus just to try it, then ordered a second one straight away. It’s our Friday place now.”</blockquote>
+          <figcaption><b>Aigerim Sagyndykova</b><span>guest in Almaty</span></figcaption>
+        </figure>
+        <figure class="quote quote-coral">
+          <blockquote>“We hosted a forty-person company dinner. The paella came out in a pan the size of a wheel and everyone reached for their phones.”</blockquote>
+          <figcaption><b>Daniyar Kassymov</b><span>head of sales</span></figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>“Fresh oysters, music you can talk over, and a waiter who actually knows his wine.”</blockquote>
+          <figcaption><b>Madina Nurlanova</b><span>architect, Astana</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="booking" id="booking">
+      <div class="booking-bg" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1545816250-e12bedba42ba?w=1800&h=1100&fit=crop&q=70" alt="">
+      </div>
+      <div class="booking-grid">
+        <div class="booking-copy">
+          <p class="eyebrow">Reservations</p>
+          <h2 class="h2">Table<br>for tonight?</h2>
+          <p class="lead">Leave your number and our host will call back within 15 minutes to confirm. Fridays and Saturdays fill up, so book ahead.</p>
+          <div class="booking-contacts">
+            <a href="tel:+77000000000"><i class="ph ph-phone"></i>+7 700 000 00 00</a>
+            <a href="https://wa.me/77000000000" target="_blank" rel="noopener"><i class="ph ph-whatsapp-logo"></i>Message us on WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="form" id="bookingForm" novalidate>
+          <div class="form-state" id="formSuccess" hidden>
+            <i class="ph-fill ph-check-circle"></i>
+            <h3>Request received</h3>
+            <p>We’ll call within 15 minutes to confirm your table.</p>
+            <button type="button" class="btn btn-ghost" id="formReset">New request</button>
+          </div>
+
+          <div class="form-fields" id="formFields">
+            <div class="field">
+              <label for="f-name">Name</label>
+              <input id="f-name" name="name" type="text" autocomplete="given-name" placeholder="What should we call you?" required>
+              <small class="err">Please tell us your name</small>
+            </div>
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___ __ __" required>
+              <small class="err">Enter 10 digits after +7</small>
+            </div>
+            <div class="field field-full">
+              <label for="f-place">Restaurant</label>
+              <div class="select">
+                <select id="f-place" name="place" required>
+                  <option value="" disabled selected>Choose a restaurant</option>
+                  <option>Almaty, 105 Dostyk Ave</option>
+                  <option>Almaty, 247 Rozybakiev St</option>
+                  <option>Astana, 37 Mangilik El Ave</option>
+                  <option>Shymkent, 54 Tauke Khan Ave</option>
+                </select>
+                <i class="ph ph-caret-down"></i>
+              </div>
+              <small class="err">Please choose a restaurant</small>
+            </div>
+            <div class="field">
+              <label for="f-date">Date</label>
+              <input id="f-date" name="date" type="date" required>
+              <small class="err">Pick today or a later date</small>
+            </div>
+            <div class="field">
+              <label for="f-time">Time</label>
+              <input id="f-time" name="time" type="time" min="12:00" max="23:30" value="19:30" required>
+              <small class="err">We seat guests from 12:00 to 23:30</small>
+            </div>
+            <div class="field field-full">
+              <span class="label" id="guests-label">Guests</span>
+              <div class="stepper" role="group" aria-labelledby="guests-label">
+                <button type="button" data-step="-1" aria-label="Fewer guests"><i class="ph ph-minus"></i></button>
+                <output id="guests" aria-live="polite">2</output>
+                <button type="button" data-step="1" aria-label="More guests"><i class="ph ph-plus"></i></button>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-coral btn-block">Book a table</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Restaurants</h4>
+        <a href="#places">Almaty</a>
+        <a href="#places">Astana</a>
+        <a href="#places">Shymkent</a>
+      </div>
+      <div class="footer-col">
+        <h4>For guests</h4>
+        <a href="#menu">Menu</a>
+        <a href="#more">Events</a>
+        <a href="#booking">Reservations</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="tel:+77000000000">+7 700 000 00 00</a>
+        <a href="mailto:hello@octopus.kz">hello@octopus.kz</a>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        <a href="#" aria-label="Telegram"><i class="ph ph-telegram-logo"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+      </div>
+    </div>
+    <div class="footer-word" aria-hidden="true">
+      <span class="logo-o"></span>ctopus
+    </div>
+    <div class="footer-bottom">
+      <span>Website concept for Octopus · © djedai</span>
+      <a href="#top">Back to top <i class="ph ph-arrow-up"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>
